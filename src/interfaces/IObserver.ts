@@ -1,3 +1,3 @@
 export interface IObserver {
-  update():void;
+  update(t: number, p: number, h: number):void;
 }
