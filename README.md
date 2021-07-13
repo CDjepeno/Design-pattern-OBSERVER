@@ -1,5 +1,5 @@
 <p align="center"><h1 align="center">
-Kata Design_pattern-OBSERVER.
+Design_pattern-OBSERVER.
 </h1>
 
 ![Observer](https://user-images.githubusercontent.com/43074465/125525494-956e1a5e-e24a-40a9-beef-a9e3f2ea29ae.jpg)
