@@ -7,10 +7,10 @@ export class WeatherStation implements ISubject {
   humidity: number;
   arrayObservers: IObserver[] = [];
 
-  constructor(t: number, p: number, h: number) {
+  constructor(t: number, h: number, p: number,) {
     this.temp = t 
-    this.pressure = p 
     this.humidity = h
+    this.pressure = p 
   }
 
   subscribe(observer: IObserver) {
@@ -27,11 +27,11 @@ export class WeatherStation implements ISubject {
     console.log('notification aux subscribers');
     
     for (const observer of this.arrayObservers) {
-      observer.update()
+      observer.update(this.temp,this.pressure, this.humidity)
     }
   }
 
-  setMesures(t: number, p: number, h: number) {
+  setMesures(t: number, h: number, p: number) {
     this.temp = t
     this.humidity = h
     this.pressure = p 
