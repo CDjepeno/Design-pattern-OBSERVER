@@ -1,7 +1,7 @@
-import { IObserver } from './IObserver';
+import { ISubscribers } from './ISubscribers';
 export interface ISubject {
 
-  subscribe(observer: IObserver): void;
-  unSubscribe(oberserver: IObserver): void;
-  notifyObservers(): void
+  subscribe(observer: ISubscribers): void;
+  unSubscribe(oberserver: ISubscribers): void;
+  notifySubscribers(): void
 }

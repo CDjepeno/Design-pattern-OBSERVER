@@ -5,8 +5,8 @@ import { DisplayStats } from "./DisplayStats";
 
 const weatherStation = new WeatherStation(30, 30, 40);
 
-// new DisplayCondition(weatherStation);
-// new WeaterForecast(weatherStation);
+new DisplayCondition(weatherStation);
+new WeaterForecast(weatherStation);
 new DisplayStats(weatherStation);
 
 weatherStation.setMesures(20,30,50)

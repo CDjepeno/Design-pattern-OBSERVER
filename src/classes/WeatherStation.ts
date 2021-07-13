@@ -1,11 +1,11 @@
-import { IObserver } from '../interfaces/IObserver';
+import { ISubscribers } from '../interfaces/ISubscribers';
 import { ISubject } from "../interfaces/ISubject";
 
 export class WeatherStation implements ISubject {
   temp: number;
   pressure: number;
   humidity: number;
-  arrayObservers: IObserver[] = [];
+  arraySubscribers: ISubscribers[] = [];
 
   constructor(t: number, h: number, p: number,) {
     this.temp = t 
@@ -13,21 +13,21 @@ export class WeatherStation implements ISubject {
     this.pressure = p 
   }
 
-  subscribe(observer: IObserver) {
-    this.arrayObservers.push(observer)
+  subscribe(observer: ISubscribers) {
+    this.arraySubscribers.push(observer)
   }
 
-  unSubscribe(observer: IObserver) {
-    let index = this.arrayObservers.indexOf(observer)
+  unSubscribe(observer: ISubscribers) {
+    let index = this.arraySubscribers.indexOf(observer)
 
-    this.arrayObservers.splice(index,1)
+    this.arraySubscribers.splice(index,1)
   }
 
-  notifyObservers() {
+  notifySubscribers() {
     console.log('notification aux subscribers');
     
-    for (const observer of this.arrayObservers) {
-      observer.update(this.temp,this.pressure, this.humidity)
+    for (const subscriber of this.arraySubscribers) {
+      subscriber.update(this.temp,this.pressure, this.humidity)
     }
   }
 
@@ -36,7 +36,7 @@ export class WeatherStation implements ISubject {
     this.humidity = h
     this.pressure = p 
 
-    this.notifyObservers()
+    this.notifySubscribers()
   }
 
 }

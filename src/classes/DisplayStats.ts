@@ -1,8 +1,8 @@
-import { IObserver } from '../interfaces/IObserver';
+import { ISubscribers } from '../interfaces/ISubscribers';
 import { IDisplay } from '../interfaces/IDisplay';
 import { ISubject } from '../interfaces/ISubject';
 
-export class DisplayStats implements IObserver, IDisplay {
+export class DisplayStats implements ISubscribers, IDisplay {
 
   subject: ISubject
 

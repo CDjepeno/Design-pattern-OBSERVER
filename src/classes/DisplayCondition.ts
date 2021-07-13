@@ -1,9 +1,8 @@
 import { IDisplay } from '../interfaces/IDisplay';
-import { IObserver } from '../interfaces/IObserver';
-import { WeatherStation } from './WeatherStation';
+import { ISubscribers } from '../interfaces/ISubscribers';
 import { ISubject } from '../interfaces/ISubject';
 
-export class DisplayCondition implements IObserver, IDisplay {
+export class DisplayCondition implements ISubscribers, IDisplay {
 
   subject: ISubject
 
@@ -23,8 +22,6 @@ export class DisplayCondition implements IObserver, IDisplay {
   }
 
   display() {
-    // return this.update()
-    // return `Conditions actuelles: ${this.update()}`;
     console.log("Condition:") 
   }
 }

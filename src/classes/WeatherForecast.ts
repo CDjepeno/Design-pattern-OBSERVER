@@ -1,9 +1,9 @@
 import { IDisplay } from '../interfaces/IDisplay';
-import { IObserver } from '../interfaces/IObserver';
+import { ISubscribers } from '../interfaces/ISubscribers';
 import { ISubject } from '../interfaces/ISubject';
 import { WeatherStation } from './WeatherStation';
 
-export class WeaterForecast implements IDisplay, IObserver {
+export class WeaterForecast implements IDisplay, ISubscribers {
 
   subject: ISubject
 
