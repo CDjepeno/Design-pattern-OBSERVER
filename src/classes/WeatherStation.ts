@@ -24,13 +24,19 @@ export class WeatherStation implements ISubject {
   }
 
   notifyObservers() {
+    console.log('notification aux subscribers');
+    
     for (const observer of this.arrayObservers) {
       observer.update()
     }
   }
 
-  setMesures() {
-    
+  setMesures(t: number, p: number, h: number) {
+    this.temp = t
+    this.humidity = h
+    this.pressure = p 
+
+    this.notifyObservers()
   }
 
 }
