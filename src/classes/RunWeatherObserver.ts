@@ -1,7 +1,7 @@
 import { WeatherStation } from "./WeatherStation";
-import { DisplayCondition } from './DisplayCondition';
-import { WeaterForecast } from "./WeatherForecast";
-import { DisplayStats } from "./DisplayStats";
+import { DisplayCondition } from './subscribers/DisplayCondition';
+import { WeaterForecast } from "./subscribers/WeatherForecast";
+import { DisplayStats } from "./subscribers/DisplayStats";
 
 const weatherStation = new WeatherStation(30, 30, 40);
 

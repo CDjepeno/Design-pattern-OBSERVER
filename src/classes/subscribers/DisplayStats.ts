@@ -1,6 +1,6 @@
-import { ISubscribers } from '../interfaces/ISubscribers';
-import { IDisplay } from '../interfaces/IDisplay';
-import { ISubject } from '../interfaces/ISubject';
+import { ISubscribers } from '../../interfaces/ISubscribers';
+import { IDisplay } from '../../interfaces/IDisplay';
+import { ISubject } from '../../interfaces/ISubject';
 
 export class DisplayStats implements ISubscribers, IDisplay {
 

@@ -1,7 +1,6 @@
-import { IDisplay } from '../interfaces/IDisplay';
-import { ISubscribers } from '../interfaces/ISubscribers';
-import { ISubject } from '../interfaces/ISubject';
-import { WeatherStation } from './WeatherStation';
+import { IDisplay } from '../../interfaces/IDisplay';
+import { ISubscribers } from '../../interfaces/ISubscribers';
+import { ISubject } from '../../interfaces/ISubject';
 
 export class WeaterForecast implements IDisplay, ISubscribers {
 

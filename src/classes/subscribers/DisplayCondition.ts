@@ -1,6 +1,6 @@
-import { IDisplay } from '../interfaces/IDisplay';
-import { ISubscribers } from '../interfaces/ISubscribers';
-import { ISubject } from '../interfaces/ISubject';
+import { IDisplay } from '../../interfaces/IDisplay';
+import { ISubscribers } from '../../interfaces/ISubscribers';
+import { ISubject } from '../../interfaces/ISubject';
 
 export class DisplayCondition implements ISubscribers, IDisplay {
 
