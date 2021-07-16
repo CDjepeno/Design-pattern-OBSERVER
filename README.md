@@ -9,5 +9,7 @@ Design_pattern-OBSERVER.
 $ git clone https://github.com/CDjepeno/Design_pattern-OBSERVER.git
 $ cd Design_pattern-OBSERVER
 $ npm install
-$ tsc RunStation.ts && node RunStation.js
+$ npm run build 
+$ cd /public/classes/RunWeatherObserver.js
+$ node RunWeatherObserver.js
 ```
