@@ -6,8 +6,10 @@ Design_pattern-OBSERVER.
 
 # Getting Started
 ```bash
+
 $ git clone https://github.com/CDjepeno/Design_pattern-OBSERVER.git
 $ cd Design_pattern-OBSERVER
 $ npm install
-$ npm run test
+$ npm run test 
+
 ```
